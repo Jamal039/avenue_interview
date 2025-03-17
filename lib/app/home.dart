@@ -164,11 +164,17 @@ class _MyHomePageState extends State<MyHomePage> {
                                                   .secondary,
                                             ),
                                       ),
+                                      SizedBox(
+                                        height: 16,
+                                      ),
                                       ElevatedButton(
                                         child: Text('Close'),
                                         onPressed: () {
                                           Navigator.of(context).pop();
                                         },
+                                      ),
+                                      SizedBox(
+                                        height: 8,
                                       ),
                                       OutlinedButton(
                                         child: Text('Ir para o Site'),
