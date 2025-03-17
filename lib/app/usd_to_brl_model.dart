@@ -55,7 +55,7 @@ class UsdToBrlModel {
   final String? bid;
   final String? ask;
   final String? timestamp;
-  final String? create_date;
+  final String create_date;
 
   UsdToBrlModel({
     this.code,
@@ -68,7 +68,7 @@ class UsdToBrlModel {
     this.bid,
     this.ask,
     this.timestamp,
-    this.create_date,
+    required this.create_date,
   });
 
   factory UsdToBrlModel.fromJson(Map<String, dynamic> json) {
@@ -83,7 +83,7 @@ class UsdToBrlModel {
       bid: json['bid'],
       ask: json['ask'],
       timestamp: json['timestamp'],
-      create_date: json['create_date'],
+      create_date: json['createdate'],
     );
   }
 
