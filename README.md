@@ -1,16 +1,18 @@
-# avenue_interview
+# Avenue Interview Project
 
-A new Flutter project.
+Esse projeto é um aplicativo que mostra a cotação do Dollar atual, e uma lista da cotação do Dollar dos últimos 15 dias.
 
-## Getting Started
+Um dos desafios de qualquer time de desenvolvimento é lidar com código legado e na Avenue isso não é diferente. Um dos objetivos de trazer os melhores desenvolvedores do Brasil é atacar o problema. Para isso, essa etapa do processo consiste numa proposta de solução para o desafio abaixo e você pode escolher a melhor forma de resolvê-lo, de acordo com sua comodidade e disponibilidade de tempo:
 
-This project is a starting point for a Flutter application.
+ - Resolver o desafio previamente, e explicar sua abordagem no momento da entrevista. 
+ - Discutir as possibilidades de solução durante a entrevista, fazendo um pair programming (bate-papo) interativo com os nossos devs.
 
-A few resources to get you started if this is your first Flutter project:
+Com o passar do tempo identificamos alguns problemas que impedem esse aplicativo de escalar e acarretam problemas de experiência do usuário. A partir disso elaboramos a seguinte lista de requisitos que devem ser cumpridos ao melhorar nossa arquitetura:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ - Nossos relatórios de crash têm mostrado alguns crashes relacionados a campos que não deveriam ser nulos sendo nulos e gerenciamento de lifecycle. Gostaríamos que fossem corrigidos. 
+ - Gostaríamos de cachear os dados retornados pelo servidor.
+ - Haverá mudanças na lógica de negócios e gostaríamos que a arquitetura reaja bem a isso.
+ - Haverá mudanças na lógica de apresentação. Gostaríamos que a arquitetura reaja bem a isso.
+ - Com um grande número de desenvolvedores e uma quantidade grande de mudanças ocorrendo testes automatizados são essenciais.
+   - Gostaríamos de ter testes unitários testando nossa lógica de apresentação, negócios e dados independentemente, visto que tanto a escrita quanto execução dos mesmos são rápidas.
+   - Por outro lado, testes unitários rodam em um ambiente de execução diferenciado e são menos fiéis ao dia-a-dia de nossos usuários, então testes instrumentados também são importantes.
