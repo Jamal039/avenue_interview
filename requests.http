@@ -1,1 +1,4 @@
 GET https://economia.awesomeapi.com.br/last/USD-BRL
+
+### Retorna o fechamento dos últimos dias
+GET https://economia.awesomeapi.com.br/json/daily/USD-BRL/15

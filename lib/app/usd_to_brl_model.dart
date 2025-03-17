@@ -1,3 +1,49 @@
+class ListOfUsdToBrlModel {
+  final List<UsdToBrlModel> list;
+
+  ListOfUsdToBrlModel({
+    required this.list,
+  });
+
+  factory ListOfUsdToBrlModel.fromJson(List<dynamic> json) {
+    List<UsdToBrlModel> list = [];
+    for (var element in json) {
+      list.add(UsdToBrlModel.fromJson(element));
+    }
+    return ListOfUsdToBrlModel(
+      list: list,
+    );
+  }
+
+  List<Map<String, dynamic>> toJson() {
+    List<Map<String, dynamic>> list = [];
+    for (var element in this.list) {
+      list.add(element.toJson());
+    }
+    return list;
+  }
+}
+
+class ConvertedModel {
+  final UsdToBrlModel USDBRL;
+
+  ConvertedModel({
+    required this.USDBRL,
+  });
+
+  factory ConvertedModel.fromJson(Map<String, dynamic> json) {
+    return ConvertedModel(
+      USDBRL: UsdToBrlModel.fromJson(json['USDBRL']),
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'USDBRL': USDBRL.toJson(),
+    };
+  }
+}
+
 class UsdToBrlModel {
   final String? code;
   final String? codein;
