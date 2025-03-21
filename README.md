@@ -9,6 +9,7 @@ Um dos desafios de qualquer time de desenvolvimento é lidar com código legado 
 
 Com o passar do tempo identificamos alguns problemas que impedem esse aplicativo de escalar e acarretam problemas de experiência do usuário. A partir disso elaboramos a seguinte lista de requisitos que devem ser cumpridos ao melhorar nossa arquitetura:
 
+ - Aqui nós damos preferencia ao gerenciamento de estado com o [Cubit](https://medium.com/@muhammadnaqeeb/cubit-state-management-in-flutter-cb3d357fd0f0), mas você pode usar o que achar melhor.
  - Nossos relatórios de crash têm mostrado alguns crashes relacionados a campos que não deveriam ser nulos sendo nulos e gerenciamento de lifecycle. Gostaríamos que fossem corrigidos. 
  - Gostaríamos de cachear os dados retornados pelo servidor.
  - Haverá mudanças na lógica de negócios e gostaríamos que a arquitetura reaja bem a isso.
