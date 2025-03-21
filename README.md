@@ -12,7 +12,7 @@ Com o passar do tempo identificamos alguns problemas que impedem esse aplicativo
  - Aqui nós damos preferencia ao gerenciamento de estado com o [Cubit](https://medium.com/@muhammadnaqeeb/cubit-state-management-in-flutter-cb3d357fd0f0), mas você pode usar o que achar melhor.
  - Nossos relatórios de crash têm mostrado alguns crashes relacionados a campos que não deveriam ser nulos sendo nulos e gerenciamento de lifecycle. Gostaríamos que fossem corrigidos. 
  - Gostaríamos de cachear os dados retornados pelo servidor.
- - Haverá mudanças na lógica de negócios e gostaríamos que a arquitetura reaja bem a isso.
+ - Haverá mudanças na lógica de negócios e gostaríamos que a arquitetura reaja bem a isso. Aqui na Avenue nós damos preferencia a arquiteturas usando Clean Architecture, mas você pode usar o que achar melhor.
  - Haverá mudanças na lógica de apresentação. Gostaríamos que a arquitetura reaja bem a isso.
  - Com um grande número de desenvolvedores e uma quantidade grande de mudanças ocorrendo testes automatizados são essenciais.
    - Gostaríamos de ter testes unitários testando nossa lógica de apresentação, negócios e dados independentemente, visto que tanto a escrita quanto execução dos mesmos são rápidas.
