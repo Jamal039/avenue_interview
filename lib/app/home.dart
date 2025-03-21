@@ -69,11 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
             FutureBuilder(
               future: getCurrencyData(),
               builder: (context, snapshot) {
-                if (snapshot.connectionState == ConnectionState.waiting) {
-                  return const Center(child: CircularProgressIndicator());
-                } else if (snapshot.hasError) {
-                  return const Center(child: Text('Error'));
-                } else if (snapshot.hasData) {
+                if (snapshot.hasData) {
                   final data = snapshot.data as UsdToBrlModel;
                   return Text(
                     'USD to BRL: ${data.ask}',
@@ -90,11 +86,7 @@ class _MyHomePageState extends State<MyHomePage> {
             FutureBuilder(
               future: getListOfUsdBy15(),
               builder: (context, snapshot) {
-                if (snapshot.connectionState == ConnectionState.waiting) {
-                  return const Center(child: CircularProgressIndicator());
-                } else if (snapshot.hasError) {
-                  return const Center(child: Text('Error'));
-                } else if (snapshot.hasData) {
+                if (snapshot.hasData) {
                   final data = snapshot.data as ListOfUsdToBrlModel;
                   final list = data.list;
                   return SizedBox(
