@@ -16,6 +16,9 @@ Com o passar do tempo identificamos alguns problemas que impedem esse aplicativo
  - Haverá mudanças na lógica de apresentação. Gostaríamos que a arquitetura reaja bem a isso.
  - Agora estamos usando uma tabela para a cotação do dolar, isso deixa a UI muito carregada, gostaríamos de mudar para um gráfico. (Opcional)
  - Seria interessante o app suportar outras linguagens, como inglês e espanhol. (Opcional)
+ - Seria interessante listar as libs que foram adicionadas aqui no readme. (Opcional)
+ - Seria interessante adicionar testes automatizados, via CI/CD. (Opcional)
+ - Seria interessante o app da suporte de upload de imagem no perfil do cliente. (Opcional)
  - Com um grande número de desenvolvedores e uma quantidade grande de mudanças ocorrendo testes automatizados são essenciais.
    - Gostaríamos de ter testes unitários testando nossa lógica de apresentação, negócios e dados independentemente, visto que tanto a escrita quanto execução dos mesmos são rápidas.
    - Por outro lado, testes unitários rodam em um ambiente de execução diferenciado e são menos fiéis ao dia-a-dia de nossos usuários.
